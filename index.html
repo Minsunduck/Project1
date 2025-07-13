@@ -4,165 +4,241 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <meta name="description"
+    content="한국관광공사 메인페이지 리디자인 프로젝트입니다. 정보 접근성과 사용자 편의성을 높이기 위해 UI/UX를 개선하였으며, 반응형 웹 퍼블리싱과 시멘틱 마크업을 적용한 결과물입니다.">
+  <meta name="keywords"
+    content="한국관광공사, 리디자인, 웹 퍼블리싱, UI 디자인, UX 개선, 반응형 웹, 시멘틱 마크업, HTML, CSS, JavaScript, 접근성, 사용자 중심 디자인, 프론트엔드 포트폴리오, 웹사이트 리뉴얼">
+  <meta name="author" content="민겨례">
+  <meta property="og:title" content="한국관광공사 메인페이지 리디자인 프로젝트">
+  <meta property="og:url" content="https://qwerewqwerew.github.io/yallow/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og-card.png">
+  <meta property="og:site_name" content="한국관광공사 리디자인 프로젝트">
+  <meta property="og:description"
+    content="한국관광공사 메인페이지 리디자인 프로젝트입니다. 정보 접근성과 사용자 편의성을 높이기 위해 UI/UX를 개선하였으며, 반응형 웹 퍼블리싱과 시멘틱 마크업을 적용한 결과물입니다.">
   <title>한국관광공사 메인</title>
+  <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+  <div class="utility-bar">
+    <div class="container">
+      <div class="utility-left">
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAyNCAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjE2IiBmaWxsPSJ3aGl0ZSIvPgo8cmVjdCB5PSI1IiB3aWR0aD0iMjQiIGhlaWdodD0iNiIgZmlsbD0iIzAwNzNFNiIvPgo8cmVjdCB5PSIxMSIgd2lkdGg9IjI0IiBoZWlnaHQ9IjUiIGZpbGw9IiNGRjAwMDAiLz4KPC9zdmc+"
+          alt="한국 국기" class="flag-icon">
+        <span>이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
+      </div>
+      <div class="utility-right">
+        <button class="minimize-btn" aria-label="최소화">-</button>
+        <button class="maximize-btn" aria-label="최대화">+</button>
+        <div class="language-selector">
+          <button class="lang-btn active" aria-label="영어">ENGLISH</button>
+          <button class="lang-btn" aria-label="일본어">JAPANESE</button>
+          <button class="lang-btn" aria-label="중국어">CHINESE</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="wrap">
     <div class="popup">
-      해당 사이트는 학습용으로 제작되었으며 한국관광공사와 무관합니다.
+      해당 사이트는 학습용으로 제작되었으며 한국관광공사와 무관합니다.<br>
       구직용 포트폴리오로 상업적 목적이 없음을 알립니다.
       <button>닫기</button>
     </div>
     <header class="site-header">
-      <div class="top-bar">
-        <div class="logo">
-          <img src="https://placehold.co/120x40?text=Logo" alt="한국관광공사 로고">
-        </div>
-        <nav class="main-nav" aria-label="주요 메뉴">
-          <ul>
-            <li><a href="#">정보공개</a></li>
-            <li><a href="#">주요사업</a></li>
-            <li><a href="#">알림마당</a></li>
-            <li><a href="#">국민참여</a></li>
-            <li><a href="#">KTO경영</a></li>
-            <li><a href="#">공사소개</a></li>
-            <li><a href="#">채용정보</a></li>
-          </ul>
-        </nav>
-        <div class="lang-sns">
-          <div class="lang">
-            <a href="#">ENGLISH</a> | <a href="#">JAPANESE</a> | <a href="#">CHINESE</a>
+      <div class="inner">
+        <div class="top-bar">
+          <div class="logo">
+            <h1 class="logo"><a href="index.html"><span class="ir_so">한국관광공사 로고</span></a></h1>
           </div>
-          <div class="sns-icons">
-            <a href="#" aria-label="Facebook"><span class="icon-facebook"></span></a>
-            <a href="#" aria-label="Twitter"><span class="icon-twitter"></span></a>
-            <a href="#" aria-label="Instagram"><span class="icon-instagram"></span></a>
-          </div>
-        </div>
-        <button class="menu-btn" aria-label="메뉴 열기">≡</button>
-      </div>
-      <section class="main-visual">
-        <img src="https://placehold.co/1600x500?text=Main+Visual" alt="메인 비주얼" class="visual-img">
-        <div class="visual-text">
-          <h1>여행으로 국민을 행복하게 하고<br>관광으로 국부를 증진하는 공공기관</h1>
-          <nav class="visual-nav" aria-label="비주얼 하위 메뉴">
-            <ul>
-              <li><a href="#">국민참여마당</a></li>
-              <li><a href="#">관광데이터랩</a></li>
-              <li><a href="#">관광알림판</a></li>
-              <li><a href="#">데이터랩</a></li>
-              <li><a href="#">TourAPI</a></li>
-              <li><a href="#">콘텐츠랩</a></li>
-              <li><a href="#">포토코리아</a></li>
+          <nav class="main-nav" aria-label="주요 메뉴">
+            <ul class="gnb">
+              <li class="dep1"> <!-- 포지션 가지면 안됨, w100의 부모이기 때문에 기준이 되기 때문 -->
+                <a href="#">정보공개</a>
+                <div class="w100"> <!-- pa -->
+                  <ul class="dep2 inner">
+                    <li class="title">
+                      <h2>정보공개</h2>
+                      <img src="images/titIC.png" alt="정보공개">
+                    </li> <!-- //.title -->
+                    <li>
+                      <h3><a href="#">정보공개제도</a></h3>
+                      <dl>
+                        <dt><a href="#">제도 안내</a></dt>
+                        <dd><a href="#">정보공개 청구</a></dd>
+                        <dd><a href="#">비공개 대상 정보</a></dd>
+                        <dd><a href="#">불복구제절차</a></dd>
+                        <dd><a href="#">수수료</a></dd>
+                      </dl>
+                      <h3><a href="#">사업실명제</a></h3>
+                    </li> <!-- //2-1 -->
+                    <li>
+                      <h3><a href="#">정보목록</a></h3>
+                    </li> <!-- //2-2 -->
+                    <li>
+                      <h3><a href="#">사전정보 목록</a></h3>
+                    </li> <!-- //2-3 -->
+                    <li>
+                      <h3><a href="#">공공데이터개방</a></h3>
+                    </li> <!-- //2-4 -->
+
+                  </ul> <!-- //.dp2 -->
+                </div> <!-- //.w100 -->
+              </li> <!-- //.dep1 -->
             </ul>
-          </nav>
-        </div>
-      </section>
-    </header>
+          </nav> <!-- //주요 메뉴 -->
+          <div class="lang">
+            <div class="lang">
+              <a href="#">ENGLISH</a> | <a href="#">JAPANESE</a> | <a href="#">CHINESE</a>
+            </div>
+          </div>
+          <button class="menu-btn" aria-label="메뉴 열기">≡</button>
+        </div> <!-- //.top-bar -->
+      </div> <!-- //.inner -->
+      <div class="inner">
+        <section class="main-visual">
+          <img src="https://placehold.co/1600x500?text=Main+Visual" alt="메인 비주얼" class="visual-img">
+          <div class="visual-text">
+            <h1>여행으로 국민을 행복하게 하고<br>관광으로 국부를 증진하는 공공기관</h1>
+            <nav class="visual-nav" aria-label="비주얼 하위 메뉴">
+              <ul>
+                <li><a href="#">국민참여마당</a></li>
+                <li><a href="#">관광데이터랩</a></li>
+                <li><a href="#">관광알림판</a></li>
+                <li><a href="#">데이터랩</a></li>
+                <li><a href="#">TourAPI</a></li>
+                <li><a href="#">콘텐츠랩</a></li>
+                <li><a href="#">포토코리아</a></li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+      </div>
+    </header> <!-- //header -->
     <main>
-      <section class="news">
-        <div class="news-title">
-          <h2>알림마당</h2>
-          <p>한국관광공사의<br><strong>새로운 소식</strong>을<br>만나보세요</p>
-        </div>
-        <div class="news-list">
-          <article>
-            <h3>보도자료</h3>
-            <p>인기 해수욕장을 한 눈에, '여름 해변 지도' 공개</p>
-            <time datetime="2025-06-25">2025-06-25</time>
-          </article>
-          <article>
-            <h3>보도자료</h3>
-            <p>게임·뷰티·푸드, 한관광공이 호캉스를 돕는다!</p>
-            <time datetime="2025-06-23">2025-06-23</time>
-          </article>
-          <article>
-            <h3>보도자료</h3>
-            <p>생성형 AI 속 왜곡된 한국 이미지 바로잡는다!</p>
-            <time datetime="2025-06-24">2025-06-24</time>
-          </article>
-          <article class="news-img">
-            <img src="https://placehold.co/200x120?text=News+Image" alt="뉴스 이미지">
-          </article>
-        </div>
-        <div class="news-pagination">
-          <button aria-label="이전">◀</button>
-          <span>01 / 02</span>
-          <button aria-label="다음">▶</button>
-        </div>
-      </section>
-      <section class="business">
-        <h2>주요사업</h2>
-        <p>국가경제 발전과 국민복지 증진을 위해<br>다양한 사업을 추진합니다</p>
-        <div class="business-main">
-          <div class="business-main-img">
-            <img src="https://placehold.co/600x200?text=사업+대표이미지" alt="주요사업 대표 이미지">
-            <a href="#" class="business-link" aria-label="국제관광지원 바로가기">국제관광지원 →</a>
+      <div class="inner">
+<!--         <section class="news">
+          <div class="news-title">
+            <h2>알림마당</h2>
+            <p>한국관광공사의<br><strong>새로운 소식</strong>을<br>만나보세요</p>
           </div>
-          <div class="business-list">
-            <a href="#">국제관광지원</a>
-            <a href="#">국민관광지원</a>
-            <a href="#">관광산업지원</a>
-            <a href="#">관광콘텐츠육성</a>
+          <div class="news-list">
+            <article>
+              <h3>보도자료</h3>
+              <p>인기 해수욕장을 한 눈에, '여름 해변 지도' 공개</p>
+              <time datetime="2025-06-25">2025-06-25</time>
+            </article>
+            <article>
+              <h3>보도자료</h3>
+              <p>게임·뷰티·푸드, 한관광공이 호캉스를 돕는다!</p>
+              <time datetime="2025-06-23">2025-06-23</time>
+            </article>
+            <article>
+              <h3>보도자료</h3>
+              <p>생성형 AI 속 왜곡된 한국 이미지 바로잡는다!</p>
+              <time datetime="2025-06-24">2025-06-24</time>
+            </article>
+            <article class="news-img">
+              <img src="https://placehold.co/200x120?text=News+Image" alt="뉴스 이미지">
+            </article>
           </div>
-        </div>
-      </section>
-      <section class="about">
-        <h2>공사 참여</h2>
-        <p>국민에게 신뢰받는 관광 선도기관</p>
-        <div class="about-main">
-          <div class="about-img">
-            <img src="https://placehold.co/300x300?text=전통+건축" alt="전통 건축 이미지">
+          <div class="news-pagination">
+            <button aria-label="이전">◀</button>
+            <span>01 / 02</span>
+            <button aria-label="다음">▶</button>
           </div>
-          <div class="about-cards">
-            <div class="about-card">
-              <h3>윤리·인권 경영<br>클린 케이티오</h3>
-              <p>한국관광공사에 Total Service Provider로서의 한 국관광의 새로운 성장을 구현하고 있습니다.</p>
-              <a href="#">윤리 경영</a>
-              <a href="#">인권 경영</a>
-            </div>
-            <div class="about-card">
-              <h3>KTO ESG경영</h3>
-              <p>한국관광공사는 ESG경영을 통해 지속가능한 관광을 구현하고 있습니다.</p>
-              <a href="#">비전 및 전략체계</a>
-              <a href="#">ESG경영지표</a>
+        </section>-->
+      <div class="section">
+        <div>알림마당</div>
+        <div class="heading2">한국관광공사의<br><strong>새로운 소식을<br>만나보세요</strong></div>
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="">
+        <container></container>
+      </div>
+      
+      </div>
+      <div class="inner">
+        <section class="business">
+          <div class="inner">
+            <h2>주요사업</h2>
+            <p>국가경제 발전과 국민복지 증진을 위해<br>다양한 사업을 추진합니다</p>
+            <div class="business-main">
+              <div class="business-main-img">
+                <img src="https://placehold.co/600x200?text=사업+대표이미지" alt="주요사업 대표 이미지">
+                <a href="#" class="business-link" aria-label="국제관광지원 바로가기">국제관광지원 →</a>
+              </div>
+              <div class="business-list">
+                <a href="#">국제관광지원</a>
+                <a href="#">국민관광지원</a>
+                <a href="#">관광산업지원</a>
+                <a href="#">관광콘텐츠육성</a>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </div>
+      <div class="inner">
+        <section class="about">
+          <h2>공사 참여</h2>
+          <p>국민에게 신뢰받는 관광 선도기관</p>
+          <div class="about-main">
+            <div class="about-img">
+              <img src="https://placehold.co/300x300?text=전통+건축" alt="전통 건축 이미지">
+            </div>
+            <div class="about-cards">
+              <div class="about-card">
+                <h3>윤리·인권 경영<br>클린 케이티오</h3>
+                <p>한국관광공사에 Total Service Provider로서의 한 국관광의 새로운 성장을 구현하고 있습니다.</p>
+                <a href="#">윤리 경영</a>
+                <a href="#">인권 경영</a>
+              </div>
+              <div class="about-card">
+                <h3>KTO ESG경영</h3>
+                <p>한국관광공사는 ESG경영을 통해 지속가능한 관광을 구현하고 있습니다.</p>
+                <a href="#">비전 및 전략체계</a>
+                <a href="#">ESG경영지표</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main> <!-- //main -->
     <footer class="site-footer">
-      <div class="footer-top">
-        <div class="footer-logo">
-          <img src="https://placehold.co/120x40?text=Logo" alt="한국관광공사 로고">
+      <div class="inner">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <img src="https://placehold.co/120x40?text=Logo" alt="한국관광공사 로고">
+          </div>
+          <div class="footer-links">
+            <a href="#">NIS정책정보</a>
+            <a href="#">알리오플러스</a>
+            <a href="#">안전신문고</a>
+            <a href="#">행복직장 만들기</a>
+            <a href="#">채용비리 통합신고센터</a>
+            <a href="#">정책24</a>
+            <a href="#">윤리가 있는 날</a>
+          </div>
+          <div class="footer-family">
+            <label for="family-site" class="visually-hidden">Family Site</label>
+            <select id="family-site">
+              <option>Family Site</option>
+              <option>관광공사1</option>
+              <option>관광공사2</option>
+            </select>
+          </div>
         </div>
-        <div class="footer-links">
-          <a href="#">NIS정책정보</a>
-          <a href="#">알리오플러스</a>
-          <a href="#">안전신문고</a>
-          <a href="#">행복직장 만들기</a>
-          <a href="#">채용비리 통합신고센터</a>
-          <a href="#">정책24</a>
-          <a href="#">윤리가 있는 날</a>
-        </div>
-        <div class="footer-family">
-          <label for="family-site" class="visually-hidden">Family Site</label>
-          <select id="family-site">
-            <option>Family Site</option>
-            <option>관광공사1</option>
-            <option>관광공사2</option>
-          </select>
+        <div class="footer-info">
+          <address>
+            한국관광공사 26464 강원특별자치도 원주시 세계로 10 한국관광공사 | TEL. 033-738-3000 | 대표자명 : 김장실 | 사업자등록번호 : 202-82-00076
+          </address>
+          <p>Copyright © 한국관광공사. All rights reserved.</p>
         </div>
       </div>
-      <div class="footer-info">
-        <address>
-          한국관광공사 26464 강원특별자치도 원주시 세계로 10 한국관광공사 | TEL. 033-738-3000 | 대표자명 : 김장실 | 사업자등록번호 : 202-82-00076
-        </address>
-        <p>Copyright © 한국관광공사. All rights reserved.</p>
-      </div>
-    </footer>
+    </footer> <!-- //footer -->
   </div>
   <script src="script/js.js"></script>
 </body>

@@ -1,0 +1,35 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+:root {
+    --col: 34.5rem;
+    --g: 1rem;
+    --gu: calc(var(--g) * 2);
+    --row: 8.2rem;
+    --unit: calc(var(--col) + var(--gu));
+    --layout: calc(var(--unit) * 4 - var(--gu));
+    
+}
+
+html {
+  font-size: 62.5%;
+  /* 16*62.5/100 = 10px */
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  background: #fafafa;
+  color: #222;
+  line-height: 1.75;
+}
+
+.ir_so {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
