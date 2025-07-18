@@ -1,3 +1,7 @@
-document.querySelector('button').addEventListener('click',function(){
-    document.querySelector('.popup').style.display='none';
-})
+document.addEventListener('DOMContentLoaded', function () {
+  const popup = document.querySelector('.popup');
+  const closeBtn = popup.querySelector('button');
+  closeBtn.addEventListener('click', function () {
+    popup.style.display = 'none';
+  });
+});
