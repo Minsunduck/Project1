@@ -12,7 +12,6 @@
 }
 
 .utility-bar {
-  border-bottom: 1px solid #ddd;
   font-size: 0.95rem;
 }
 
@@ -55,20 +54,23 @@
   margin: 0;
   padding: 0;
 }
+
 .language-selector a {
   text-decoration: none;
   color: #222;
   font-weight: 500;
 }
+
 .language-selector a.active {
   font-weight: bold;
   color: #0055a5;
 }
 
 .main-bar {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid #ddd;
 }
+
 .main-bar .container {
   display: flex;
   align-items: center;
@@ -77,14 +79,21 @@
   margin: 0 auto;
   padding: 0.7em 1em;
 }
-.logo>a {
-  background: url(../img/logo.svg) no-repeat;
+
+.container {
+  list-style-type: none;
+}
+
+.logo a {
   display: block;
   width: 13.9rem;
   height: 4.5671rem;
-  flex-shrink: 0;}
+  flex-shrink: 0;
+}
 
-.main-nav .gnb {
+.deb1 {
+  list-style-type: none;
+  text-decoration: none;
   display: flex;
   gap: 2em;
   list-style: none;
@@ -92,20 +101,28 @@
   padding: 0;
 }
 
-.main-nav a {
+.dep1 a {
   text-decoration: none;
-  color: #222;
+  color: #fff;
+}
+
+.dep2 {
+  list-style-type: none;
+
+  color: #ffffff;
   font-size: 1.1rem;
   font-weight: 500;
   padding: 0.3em 0.5em;
 }
+
 .header-actions {
   display: flex;
   align-items: center;
   gap: 1em;
 }
 
-.search-btn, .menu-btn {
+.search-btn,
+.menu-btn {
   background: none;
   border: none;
   font-size: 1.3rem;
@@ -125,8 +142,6 @@
   background: #222;
   height: 60px;
 }
-
-
 
 .main-nav ul {
   display: flex;
