@@ -3,13 +3,13 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
 
 :root {
-    --col: 34.5rem;
-    --g: 1rem;
-    --gu: calc(var(--g) * 2);
-    --row: 8.2rem;
-    --unit: calc(var(--col) + var(--gu));
-    --layout: calc(var(--unit) * 4 - var(--gu));
-    
+  --col: 34.5rem;
+  --g: 1rem;
+  --gu: calc(var(--g) * 2);
+  --row: 8.2rem;
+  --unit: calc(var(--col) + var(--gu));
+  --layout: calc(var(--unit) * 4 - var(--gu));
+
 }
 
 html {
@@ -26,10 +26,22 @@ body {
 }
 
 .ir_so {
-    overflow: hidden;
-    position: absolute;
-    width: 0;
-    height: 0;
-    line-height: 0;
-    text-indent: -9999px;
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+.df {
+  display: flex;
+}
+
+.pr {
+  position: relative;
+}
+
+.pa {
+  position: absolute;
 }

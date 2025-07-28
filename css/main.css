@@ -84,11 +84,8 @@
   list-style-type: none;
 }
 
-.logo a {
-  display: block;
-  width: 13.9rem;
-  height: 4.5671rem;
-  flex-shrink: 0;
+a>img {
+  width: 130px;
 }
 
 .deb1 {
@@ -108,12 +105,20 @@
 
 .dep2 {
   list-style-type: none;
-
-  color: #ffffff;
+  color: #171717;
   font-size: 1.1rem;
   font-weight: 500;
   padding: 0.3em 0.5em;
 }
+
+.dep2 a {
+  color: #171717;
+}
+
+.dep2 h3 {
+  position: absolute;
+}
+
 
 .header-actions {
   display: flex;
@@ -567,4 +572,29 @@ button {
   border-radius: 8px;
   position: absolute;
   right: 20px;
+}
+
+/* 퀵메뉴, 스티키 메뉴 만들때 같이 자바스크립트에 스크롤 이벤트 작성하기 */ 
+.dot {
+  opacity: 1;
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  left: auto;
+  right: 10%;
+  top: auto;
+  bottom: 10%;
+  cursor: pointer;
+  transform: none;
+  opacity: 0;
+}
+
+.dot::before {
+  content: '↑';
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
