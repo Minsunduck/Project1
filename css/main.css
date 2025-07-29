@@ -9,10 +9,40 @@
 
 .site-header {
   width: 100%;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+}
+
+.main_visual {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.main_visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .utility-bar {
   font-size: 0.95rem;
+  position: relative;
+  z-index: 10;
+}
+
+.utility-bar::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #ddd;
+  z-index: 10;
 }
 
 .utility-bar .container {
@@ -69,6 +99,8 @@
 .main-bar {
   background: rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid #ddd;
+  position: relative;
+  z-index: 10;
 }
 
 .main-bar .container {
@@ -82,6 +114,17 @@
 
 .container {
   list-style-type: none;
+}
+
+nav.container.df {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0.7em 1em;
+  position: relative;
+  z-index: 10;
 }
 
 a>img {
@@ -132,11 +175,6 @@ a>img {
   border: none;
   font-size: 1.3rem;
   cursor: pointer;
-}
-
-.site-header {
-  background: #222;
-  color: #fff;
 }
 
 .top-bar {
@@ -574,7 +612,7 @@ button {
   right: 20px;
 }
 
-/* 퀵메뉴, 스티키 메뉴 만들때 같이 자바스크립트에 스크롤 이벤트 작성하기 */ 
+/* 퀵메뉴, 스티키 메뉴 만들때 같이 자바스크립트에 스크롤 이벤트 작성하기 */
 .dot {
   opacity: 1;
   width: 80px;
