@@ -4,20 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="">
   <meta name="description"
     content="한국관광공사 메인페이지 리디자인 프로젝트입니다. 정보 접근성과 사용자 편의성을 높이기 위해 UI/UX를 개선하였으며, 반응형 웹 퍼블리싱과 시멘틱 마크업을 적용한 결과물입니다.">
   <meta name="keywords"
     content="한국관광공사, 리디자인, 웹 퍼블리싱, UI 디자인, UX 개선, 반응형 웹, 시멘틱 마크업, HTML, CSS, JavaScript, 접근성, 사용자 중심 디자인, 프론트엔드 포트폴리오, 웹사이트 리뉴얼">
   <meta name="author" content="민겨례">
   <meta property="og:title" content="한국관광공사 메인페이지 리디자인 프로젝트">
-  <meta property="og:url" content="https://qwerewqwerew.github.io/yallow/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="images/og-card.png">
   <meta property="og:site_name" content="한국관광공사 리디자인 프로젝트">
   <meta property="og:description"
     content="한국관광공사 메인페이지 리디자인 프로젝트입니다. 정보 접근성과 사용자 편의성을 높이기 위해 UI/UX를 개선하였으며, 반응형 웹 퍼블리싱과 시멘틱 마크업을 적용한 결과물입니다.">
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
   <title>한국관광공사 메인</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/gnb.css">
@@ -49,9 +49,10 @@
         </div>
       </div>
     </div> <!-- 맨 위 상단 헤더 -->
-    <nav class="container df">
-      <h1><a href="index.html"><img src="img/logo.svg" alt="한국관광공사 로고"></a></h1>
-      <ul class="gnb df">
+    <nav class="gnb_wrap">
+      <div class="container df">
+        <div class="logo"><a href="index.html"><img src="img/logowhite.svg" alt="한국관광공사 로고"></a></div>
+        <ul class="gnb df">
           <li class="dep1">
             <a href="#">정보공개</a>
             <div class="w100 pa">
@@ -108,13 +109,13 @@
                     <h3><a href="#">KTO 소식</a></h3>
                     <h3><a href="#">공고</a></h3>
                     <dl>
-                      <dt><a href="">공고/공모</a></dt>
-                      <dt><a href="">입찰공고</a></dt>
+                      <dt><a href="#">공고/공모</a></dt>
+                      <dt><a href="#">입찰공고</a></dt>
                     </dl>
                     <h3><a href="#">보도자료</a></h3>
                     <h3><a href="#">언론보도설명·정정</a></h3>
                   </div>
-                </li>><!-- //.dep2-3 -->
+                </li><!-- //.dep2-3 -->
               </ul>
             </div>
           </li> <!-- dep1-3 -->
@@ -129,25 +130,25 @@
                   <h3><a href="#">자주 묻는 질문</a></h3>
                   <h3><a href="#">제보합니다</a></h3>
                   <dl>
-                    <dt><a href="">일반민원</a></dt>
-                    <dt><a href="">위반신고</a></dt>
-                    <dt><a href="">예산낭비신고</a></dt>
-                    <dt><a href="">익명·대리신고</a></dt>
+                    <dt><a href="#">일반민원</a></dt>
+                    <dt><a href="#">위반신고</a></dt>
+                    <dt><a href="#">예산낭비신고</a></dt>
+                    <dt><a href="#">익명·대리신고</a></dt>
                   </dl>
                   <h3><a href="#">관광정보 등록</a></h3>
                   <h3><a href="#">똑똑한 문의</a></h3>
                   <h3><a href="#">적극행정</a></h3>
                   <dl>
-                    <dt><a href="">개요</a></dt>
-                    <dt><a href="">국민추천</a></dt>
+                    <dt><a href="#">개요</a></dt>
+                    <dt><a href="#">국민추천</a></dt>
                   </dl>
                   <h3><a href="#">시설개방</a></h3>
                   <dl>
-                    <dt><a href="">강의실/기숙사</a></dt>
-                    <dt><a href="">강당</a></dt>
-                    <dt><a href="">체육시설</a></dt>
-                    <dt><a href="">주차장</a></dt>
-                    <dt><a href="">기타</a></dt>
+                    <dt><a href="#">강의실/기숙사</a></dt>
+                    <dt><a href="#">강당</a></dt>
+                    <dt><a href="#">체육시설</a></dt>
+                    <dt><a href="#">주차장</a></dt>
+                    <dt><a href="#">기타</a></dt>
                   </dl>
                   <h3><a href="#">똑똑한 제안</a></h3>
                   <h3><a href="#">기업성장응답센터</a></h3>
@@ -167,37 +168,37 @@
                 <li>
                   <h3><a href="#">경영공시</a></h3>
                   <dl>
-                    <dt><a href="">기관공시</a></dt>
-                    <dt><a href="">ALIO공시</a></dt>
+                    <dt><a href="#">기관공시</a></dt>
+                    <dt><a href="#">ALIO공시</a></dt>
                   </dl>
                   <h3><a href="#">안전경영</a></h3>
                   <dl>
-                    <dt><a href="">소개</a></dt>
-                    <dt><a href="">자료실</a></dt>
+                    <dt><a href="#">소개</a></dt>
+                    <dt><a href="#">자료실</a></dt>
                   </dl>
                   <h3><a href="#">ESG경영</a></h3>
                   <dl>
-                    <dt><a href="">비전 및 전략체계</a></dt>
-                    <dt><a href="">ESG경영지표</a></dt>
+                    <dt><a href="#">비전 및 전략체계</a></dt>
+                    <dt><a href="#">ESG경영지표</a></dt>
                   </dl>
                   <h3><a href="#">고객만족경영</a></h3>
                   <dl>
-                    <dt><a href="">소개</a></dt>
-                    <dt><a href="">고객서비스 내용</a></dt>
-                    <dt><a href="">이행실적</a></dt>
+                    <dt><a href="#">소개</a></dt>
+                    <dt><a href="#">고객서비스 내용</a></dt>
+                    <dt><a href="#">이행실적</a></dt>
                   </dl>
                   <h3><a href="#">윤리경영</a></h3>
                   <dl>
-                    <dt><a href="">CEO 윤리메시지</a></dt>
-                    <dt><a href="">소개</a></dt>
-                    <dt><a href="">윤리경영체계</a></dt>
-                    <dt><a href="">주요 추진활동</a></dt>
-                    <dt><a href="">윤리경영(반부패·청렴)소식</a></dt>
+                    <dt><a href="#">CEO 윤리메시지</a></dt>
+                    <dt><a href="#">소개</a></dt>
+                    <dt><a href="#">윤리경영체계</a></dt>
+                    <dt><a href="#">주요 추진활동</a></dt>
+                    <dt><a href="#">윤리경영(반부패·청렴)소식</a></dt>
                   </dl>
                   <h3><a href="#">인권경영</a></h3>
                   <dl>
-                    <dt><a href="">소개 및 구제절차</a></dt>
-                    <dt><a href="">활동현황</a></dt>
+                    <dt><a href="#">소개 및 구제절차</a></dt>
+                    <dt><a href="#">활동현황</a></dt>
                   </dl>
                 </li> <!-- //.dep2-5 -->
               </ul>
@@ -213,29 +214,28 @@
                 <li>
                   <h3><a href="#">CEO 인삿말</a></h3>
                   <dl>
-                    <dt><a href="">역대CEO</a></dt>
+                    <dt><a href="#">역대CEO</a></dt>
                   </dl>
                   <h3><a href="#">조직도</a></h3>
                   <h3><a href="#">경영전략</a></h3>
                   <dl>
-                    <dt><a href="">가치전략체계</a></dt>
-                    <dt><a href="">행동원칙</a></dt>
+                    <dt><a href="#">가치전략체계</a></dt>
+                    <dt><a href="#">행동원칙</a></dt>
                   </dl>
                   <h3><a href="#">오시는길</a></h3>
                   <dl>
-                    <dt><a href="">본사</a></dt>
-                    <dt><a href="">국내지사</a></dt>
-                    <dt><a href="">해외지사</a></dt>
-                    <dt><a href="">기타시설</a></dt>
+                    <dt><a href="#">본사</a></dt>
+                    <dt><a href="#">국내지사</a></dt>
+                    <dt><a href="#">해외지사</a></dt>
+                    <dt><a href="#">기타시설</a></dt>
                   </dl>
                   <h3><a href="#">연혁</a></h3>
                   <h3><a href="#">CI/BI소개</a></h3>
                   <dl>
-                    <dt><a href="">CI</a></dt>
-                    <dt><a href="">BI/캐릭터</a></dt>
+                    <dt><a href="#">CI</a></dt>
+                    <dt><a href="#">BI/캐릭터</a></dt>
                   </dl>
                 </li> <!-- //.dep2-6 -->
-
               </ul>
             </div>
           </li> <!-- dep1-6 -->
@@ -255,16 +255,66 @@
               </ul>
             </div>
           </li> <!-- dep1-7 -->
-          <div class="header-actions">
-            <button class="search-btn" aria-label="검색"><span aria-hidden="true">🔍</span></button>
-            <button class="menu-btn" aria-label="전체 메뉴"><span aria-hidden="true">≡</span></button>
-          </div>
-      </ul>
+        </ul>
+        <div class=" ">
+          <button class="search-btn" aria-label="검색"><span aria-hidden="true">🔍</span></button>
+          <button class="menu-btn" aria-label="전체 메뉴"><span aria-hidden="true">≡</span></button>
+        </div>
+      </div>
     </nav> <!-- .gnb -->
     <div class="main_visual"> <!-- 스와이퍼 할 곳 -->
       <div class="swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide1">
+          <div class="swiper-slide">
+            <img src="img/sunset.jpg" alt="노을풍경">
+            <h1>여행으로 국민을 행복하게 하고<br>관광으로 국부를 증진하는 공공기관</h1>
+            <div class="visual_container">
+              <div class="visual_menu">
+                <ul>
+                  <li><a href="#">국내여행정보</a></li>
+                  <li><a href="#">관광기업지원</a></li>
+                  <li><a href="#">관광데이터</a></li>
+                </ul>
+                <div class="visual_list">
+                  <ul>
+                    <li><a href="#">대한민국<br>구석구석</a></li>
+                    <li><a href="#">VISITKOREA</a></li>
+                    <li><a href="#">두루누비</a></li>
+                    <li><a href="#">세이프<br>스테이</a></li>
+                    <li><a href="#">열린 관광<br>모두의 여행</a></li>
+                    <li><a href="#">오디</a></li>
+                    <li><a href="#">고캠핑</a></li>
+                    <li><a href="#">하이커<br>그라운드</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/sunset.jpg" alt="노을풍경">
+            <h1>여행으로 국민을 행복하게 하고<br>관광으로 국부를 증진하는 공공기관</h1>
+            <div class="visual_container">
+              <div class="visual_menu">
+                <ul>
+                  <li><a href="#">국내여행정보</a></li>
+                  <li><a href="#">관광기업지원</a></li>
+                  <li><a href="#">관광데이터</a></li>
+                </ul>
+                <div class="visual_list">
+                  <ul>
+                    <li><a href="#">한국관광<br>산업포털</a></li>
+                    <li><a href="#">관광기업<br>혁신바우처</a></li>
+                    <li><a href="#">관광두레</a></li>
+                    <li><a href="#">K-MICE</a></li>
+                    <li><a href="#">근로자<br>휴가지원</a></li>
+                    <li><a href="#">관광e배움터</a></li>
+                    <li><a href="#">관광전문인력<br>포털</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
             <img src="img/sunset.jpg" alt="노을풍경">
             <h1>여행으로 국민을 행복하게 하고<br>관광으로 국부를 증진하는 공공기관</h1>
             <div class="visual_container">
@@ -286,50 +336,81 @@
             </div>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+        <div class="autoplay-progress">
+          <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="20"></circle>
+          </svg>
+          <span></span>
+        </div>
       </div>
     </div> <!-- 스와이퍼 -->
   </header> <!-- //header -->
   <main>
     <div class="inner">
-      <!--         <section class="news">
-          <div class="news-title">
-            <h2>알림마당</h2>
-            <p>한국관광공사의<br><strong>새로운 소식</strong>을<br>만나보세요</p>
-          </div>
-          <div class="news-list">
-            <article>
-              <h3>보도자료</h3>
-              <p>인기 해수욕장을 한 눈에, '여름 해변 지도' 공개</p>
-              <time datetime="2025-06-25">2025-06-25</time>
-            </article>
-            <article>
-              <h3>보도자료</h3>
-              <p>게임·뷰티·푸드, 한관광공이 호캉스를 돕는다!</p>
-              <time datetime="2025-06-23">2025-06-23</time>
-            </article>
-            <article>
-              <h3>보도자료</h3>
-              <p>생성형 AI 속 왜곡된 한국 이미지 바로잡는다!</p>
-              <time datetime="2025-06-24">2025-06-24</time>
-            </article>
-            <article class="news-img">
-              <img src="https://placehold.co/200x120?text=News+Image" alt="뉴스 이미지">
-            </article>
-          </div>
-          <div class="news-pagination">
-            <button aria-label="이전">◀</button>
-            <span>01 / 02</span>
-            <button aria-label="다음">▶</button>
-          </div>
-        </section>-->
       <div class="section">
-        <div>알림마당</div>
+        <div class="section-title">알림마당</div>
         <div class="heading2">한국관광공사의<br><strong>새로운 소식을<br>만나보세요</strong></div>
-        <link rel="stylesheet" href="">
-        <link rel="stylesheet" href="">
-        <link rel="stylesheet" href="">
-        <container></container>
-      </div>
+        <div class="news-grid">
+          <article class="news-card">
+            <header class="news-card__header">
+              <span class="news-card__category">보도자료</span>
+              <button class="news-card__action" aria-label="더보기">+</button>
+            </header>
+            <h2 class="news-card__title">
+              한국관광공사, 미국 청소년 음악단체 방한 유치 박차
+            </h2>
+            <p class="news-card__summary">
+              한국관광공사, 미국 청소년 음악단체 방한 유치 박차 - 카네기홀...
+            </p>
+            <time class="news-card__date" datetime="2025-08-06">2025-08-06</time>
+          </article>
+          
+          <article class="news-card">
+            <header class="news-card__header">
+              <span class="news-card__category">보도자료</span>
+              <button class="news-card__action" aria-label="더보기">+</button>
+            </header>
+            <h2 class="news-card__title">
+              2026여수세계섬박람회 성공 개최를 위한 업무협약 체결
+            </h2>
+            <p class="news-card__summary">
+              2026여수세계섬박람회 성공 개최를 위한 업무협약 체결 - 한...
+            </p>
+            <time class="news-card__date" datetime="2025-07-31">2025-07-31</time>
+          </article>
+          
+          <article class="news-card">
+            <header class="news-card__header">
+              <span class="news-card__category">보도자료</span>
+              <button class="news-card__action" aria-label="더보기">+</button>
+            </header>
+            <h2 class="news-card__title">
+              지역주민이 만드는 진짜 로컬여행, '관광두레' 신규사업체 선정
+            </h2>
+            <p class="news-card__summary">
+              지역주민이 만드는 진짜 로컬여행, '관광두레' 신규사업체 선정...
+            </p>
+            <time class="news-card__date" datetime="2025-07-31">2025-07-31</time>
+          </article>
+          
+          <article class="news-card">
+            <header class="news-card__header">
+              <span class="news-card__category">보도자료</span>
+              <button class="news-card__action" aria-label="더보기">+</button>
+            </header>
+            <h2 class="news-card__title">
+              한국관광공사TV 공식 유튜브 채널 오픈
+            </h2>
+            <p class="news-card__summary">
+              한국관광공사TV 공식 유튜브 채널이 새롭게 오픈했습니다...
+            </p>
+            <time class="news-card__date" datetime="2025-07-30">2025-07-30</time>
+          </article>
+        </div>
 
     </div>
     <section class="business">
@@ -380,7 +461,7 @@
     <div class="inner">
       <div class="footer-top">
         <div class="footer-logo">
-          <h1><a href="index.html"><img src="img/logo.svg" alt="한국관광공사 로고"></a></h1>
+          <div class="logo"><a href="index.html"><img src="img/logo.svg" alt="한국관광공사 로고"></a></div>
         </div>
         <div class="footer-links">
           <a href="#">NIS정책정보</a>
@@ -408,9 +489,11 @@
       </div>
     </div>
   </footer> <!-- //footer -->
-  </div>
   <div class="dot"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script/js.js"></script>
+
 </body>
 
 </html>
