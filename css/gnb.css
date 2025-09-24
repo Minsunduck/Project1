@@ -1,0 +1,152 @@
+@charset 'utf-8';
+
+nav.gnb_wrap {
+    position: relative;
+    z-index: 9999999;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+nav.gnb_wrap .container.df {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--layout);
+    margin: 0 auto;
+}
+
+nav.gnb_wrap .container.df.on {
+    color: black;
+    a {
+        color: black;
+    }
+}
+
+nav.gnb_wrap .logo {
+    flex-shrink: 0;
+}
+
+nav.gnb_wrap .gnb {
+    width: 80%;
+    margin:auto;
+}
+
+nav.gnb_wrap .header-actions {
+    flex-shrink: 0;
+}
+
+.site-header {
+    width: 100%;
+    position: relative;
+}
+
+.site-header::after {
+    top: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    content: '';
+    height: 1px;
+    background: #ddd;
+}
+
+.gnb {
+    max-width: var(--layout);
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    a{
+        font-size:1.8rem;
+        line-height: 7.2rem;
+        font-weight: 700;
+    }
+}
+
+.dep1 {width: calc(100% / 7); }
+
+.dep1:hover .w100 {
+    height: auto;
+    padding-bottom: 2rem;
+    z-index: 2;
+}
+
+.w100 {
+    top: 7.2rem;
+    left: 0;
+    right: 0;
+    background: #fbfbfb;
+    padding: 0 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: padding 0.5s;
+    position: absolute;
+    box-shadow: 0 2px 2px rgb(0 0 0/7%);
+    height: 0;
+}
+
+.dep2 {
+    column-gap: 5rem;
+    width: 100%;
+    padding:10px;
+    &>.title {
+        width: 30%;
+        max-width: 150px;
+        font-weight: 700;
+        padding:1rem;
+        font-size:2.8rem;
+        white-space: nowrap;
+    }
+
+    &>.df_r {
+        display: flex;
+        column-gap: 20rem;
+    }
+
+}
+
+.dg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
+    
+}
+.df_c{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    white-space: nowrap;
+    a{
+        line-height: 1.75;
+    }
+    &:before{
+    position: absolute;
+            content: '';
+            left:-2rem;
+            top:5%;
+            background-color: #ddd;
+            height: 90%;
+            width: 1px;
+    }
+    h3~a{
+        font-weight: 400;
+        padding-left: 1rem;
+        display: inline-block;
+        position: relative;
+        color:#555;
+        &::before{
+            position: absolute;
+            content: '-';
+            left:0;
+        }
+    }
+}
+.df_r{
+    display: flex;
+}
+.pt-2{padding: 2rem 0 0 0 ;}
+.pb-2{padding: 0 0 2rem 0 ;}
